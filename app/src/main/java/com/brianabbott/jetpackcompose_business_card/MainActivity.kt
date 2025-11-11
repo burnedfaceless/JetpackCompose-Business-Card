@@ -71,6 +71,23 @@ fun CreateBusinessCard() {
             ) {
                 CreateImageProfile()
                 HorizontalDivider()
+                Text(
+                    text = "Brian Abbott",
+                    style = MaterialTheme.typography.headlineMedium,
+                    color = Color.DarkGray,
+                    modifier = Modifier.padding(top = 10.dp, bottom = 5.dp)
+                )
+                Text(
+                    text = "Android Developer",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = Color.Gray
+                )
+                Text(
+                    text = "ba01739@georgiasouthern.edu",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = Color.LightGray,
+                    modifier = Modifier.padding(top = 3.dp, bottom = 10.dp)
+                )
             }
         }
     }
