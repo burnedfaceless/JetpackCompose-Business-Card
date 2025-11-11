@@ -67,29 +67,28 @@ fun CreateBusinessCard() {
                 verticalArrangement = Arrangement.Top,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-
-                Surface(
-                    modifier = Modifier
-                        .size(150.dp)
-                        .padding(5.dp),
-                    shape = CircleShape,
-                    border = BorderStroke(0.5.dp, Color.LightGray),
-                    shadowElevation = 4.dp,
-                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f)
-                ) {
-                    Image(
-                        painter = painterResource(id = R.drawable.profile_image),
-                        contentDescription = "profile image",
-                        modifier = Modifier.size(135.dp)
-                    )
-                }
-
+                CreateImageProfile()
             }
-
-
         }
+    }
+}
 
-
+@Composable
+fun CreateImageProfile() {
+    Surface(
+        modifier = Modifier
+            .size(150.dp)
+            .padding(5.dp),
+        shape = CircleShape,
+        border = BorderStroke(0.5.dp, Color.LightGray),
+        shadowElevation = 4.dp,
+        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f)
+    ) {
+        Image(
+            painter = painterResource(id = R.drawable.profile_image),
+            contentDescription = "profile image",
+            modifier = Modifier.size(135.dp)
+        )
     }
 }
 
